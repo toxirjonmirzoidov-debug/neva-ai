@@ -315,7 +315,7 @@ async function handleFile(file){
       pendingFiles.push({ name:file.name, kind:'pdf', mediaType: file.type || 'application/octet-stream', data: base64 });
     }
   } catch(err){
-    console.error('Fayl o\\'qishda xatolik', err);
+    console.error("Fayl o'qishda xatolik", err);
   }
 }
 

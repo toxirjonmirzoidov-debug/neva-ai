@@ -8,7 +8,7 @@ app.use(express.json({ limit: '25mb' }));
 app.use(express.static(path.join(__dirname, '.')));
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-const MODEL = 'gemini-2.5-flash';
+const MODEL = 'gemini-2.5-flash-lite';
 
 if (!GEMINI_API_KEY) {
   console.warn('OGOHLANTIRISH: GEMINI_API_KEY o\'rnatilmagan. Environment variable sifatida qo\'shing.');
